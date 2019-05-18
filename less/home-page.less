@@ -70,10 +70,15 @@
 
     @media @phone {
       margin-left: 0;
+      flex-direction: column;
     }
 
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -87,7 +92,7 @@
         .button();
 
         @media @phone {
-          margin-left: 0;
+          width: 100%;
         }
       }
     }
@@ -95,16 +100,15 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
-        
-        @media @phone {
-          width: 100%;
-        }
-
       }
     }
   }
