@@ -1,1 +1,39 @@
 // Mixins Here
+
+.nav-bar() {
+    font-size: 3.5rem;
+    color: @nav-font;
+    background-color: @nav-bg;
+    border: @nav-border;
+}
+
+.button(@width: 100px, @background-color: @btn-bg-color, @color: @porcelain) {
+    display: flex;
+    justify-content: center;
+    background-color: @background-color;
+    margin: center;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: @color;
+
+    &:hover {
+        background-color: darken(@background-color, 10%);
+      }
+    // display: block;
+    // margin: 0 10px 20px;
+    // cursor: pointer;
+    // height: 45px;
+    // font-size: 2rem;
+    // border-radius: 10px;
+    // width: @width;
+    // background-color: @background-color;
+    // color: @color;
+      
+    // &:hover {
+    //   background-color: @porcelain;
+    //   color:  @btn-bg-color;
+    // }
+}
