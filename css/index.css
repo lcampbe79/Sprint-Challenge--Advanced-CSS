@@ -203,8 +203,9 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
-.home .intro img {
+.home .intro .main-img {
   width: 100%;
+  border-radius: 5px;
 }
 .home .space-images {
   display: flex;
@@ -251,7 +252,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk {
     margin-left: 0;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 .home .walk .walk-text {
